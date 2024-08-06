@@ -67,4 +67,4 @@
 
 #4. Add tpl file in snippets folder in my case i have created subfolder inside snippet name as LS. You can make any or just put file in snippet folder.
 
-'your custom html will be define in tpl file.
+#your custom html will be define in tpl file.
