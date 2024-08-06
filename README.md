@@ -6,16 +6,16 @@
 
 
 #Code 
-''code
-    // DISPATCHER FUNCTIONS
-            $dispatcher = Dispatcher::getInstance();
+
+  
                
         /**
         * 
         * AJAX REQUESTS
         * 
         */
-      
+        // DISPATCHER FUNCTIONS
+            $dispatcher = Dispatcher::getInstance();
         $listenTo = [
              \HOOK_SMARTY_OUTPUTFILTER, <!--here you can define hooks which you need for your function -->
             \HOOK_IO_HANDLE_REQUEST,
@@ -23,6 +23,6 @@
         foreach ($listenTo as $hook) {
             $dispatcher->listen('shop.hook.' . $hook, [$plugins, 'lsexec']);
         }
-           
-      ''    
+        
+       
 
